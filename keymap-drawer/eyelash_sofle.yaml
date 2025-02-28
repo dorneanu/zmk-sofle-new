@@ -106,7 +106,7 @@ layers:
   - {t: \, s: '|'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP EQUAL
-  - KP PLUS
+  - +
   - {t: AltGr+-, s: AltGr+_}
   - '?'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
