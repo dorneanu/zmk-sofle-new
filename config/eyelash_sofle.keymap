@@ -116,7 +116,7 @@
 &trans       &kp INSERT    &kp PSCRN      &kp SE_PND     &trans         &trans          &mmv LS(LG(NUMBER_2))     &kp PG_UP    &kp PG_DOWN       &kp UP_ARROW    &trans           &trans   &kp SE_QUES
 &trans       &kp K_REDO    &kp CAPS       &kp SE_EUR     &trans         &trans          &mmv C_PREVIOUS           &kp MINUS    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans   &kp SE_BSLS
 &trans       &kp K_UNDO    &kp K_CUT      &kp K_COPY     &kp K_CUT      &kp K_PASTE     &mmv C_NEXT               &kp UNDER    &kp PLUS          &trans          &trans           &trans   &trans
-&trans       &trans        &trans         &trans         &trans         &trans          &mkp LCLK          &trans       &trans            &trans          &trans           &trans
+&trans       &trans        &trans         &trans         &trans         &trans          &mkp LCLK                 &trans       &trans            &trans          &trans           &trans
             >;
         };
     };
