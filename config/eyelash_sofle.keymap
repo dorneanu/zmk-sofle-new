@@ -76,7 +76,7 @@
 &kp TAB          &kp Q         &kp W         &kp E           &kp R         &kp T          &kp DOWN_ARROW     &kp Y         &kp U         &kp I              &kp O         &kp P          &kp LBKT
 &kp LCTRL        &kp A         &kp S         &kp D           &kp F         &kp G          &kp LEFT_ARROW     &kp H         &kp J         &kp K              &kp L         &kp SEMICOLON  &kp SQT
 &kp LSHFT        &kp Z         &kp X         &kp C           &kp V         &kp B          &kp RIGHT_ARROW    &kp N         &kp M         &kp COMMA          &kp PERIOD    &kp FSLH       &kp RIGHT_SHIFT
-&kp C_MUTE       &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_GUI    &mo 1         &kp ENTER      &mkp LCLK    	     &kp SPACE     &mo 2         &kp RIGHT_CONTROL  &kp RIGHT_ALT &kp RIGHT_GUI  
+&kp C_MUTE       &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_GUI    &mo 1         &kp ENTER      &mkp LCLK    	     &kp SPACE     &mo 2         &kp RIGHT_CONTROL  &kp RIGHT_ALT &kp RIGHT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -96,13 +96,13 @@
 &none            &kp F1        &kp F2        &kp F3          &kp F4                 &kp F5           &mmv MOVE_UP     	   &kp F6             &kp F7             &kp F8                &kp F9                 &kp F10                &kp DELETE
 &kp GRAVE        &kp N1        &kp N2        &kp N3          &kp N4                 &kp N5           &mmv MOVE_DOWN         &kp SE_LCBR        &kp SE_RCBR        &kp SE_LBRC           &kp SE_RBRC            &kp PLUS               &kp SQT
 &none            &kp EXCL      &kp SE_AT     &kp POUND       &kp SE_DLR             &kp PERCENT      &mmv MOVE_LEFT         &kp CARET          &kp AMPS           &kp KP_MULTIPLY       &kp KP_LPAR            &kp KP_RPAR            &kp BACKSLASH
-&none 	 	     &kp KP_EQUAL  &kp PLUS      &kp SE_BSLS     &kp QUESTION           &none            &mmv MOVE_RIGHT        &trans             &kp UNDER          &kp SE_LABK           &kp SE_RABK            &kp SE_PIPE            &trans           
-&trans           &trans        &trans        &trans          &trans                 &trans           &none                 &trans             &trans             &trans                &trans                 &trans                 
+&none 	 	     &kp KP_EQUAL  &kp PLUS      &kp SE_BSLS     &kp QUESTION           &none            &mmv MOVE_RIGHT        &trans             &kp UNDER          &kp SE_LABK           &kp SE_RABK            &kp SE_PIPE            &trans
+&trans           &trans        &trans        &trans          &trans                 &trans           &none                 &trans             &trans             &trans                &trans                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
-		
+
         layer_2 {
 // ------------------------------------------------------------------------------------------------------------
 // | BTCLR | BT1  | BT2  |  BT3  |  BT4  | BT5  |                |      |      |       |      |       |       |
@@ -113,13 +113,14 @@
 
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4    &trans     &trans       &trans            &trans          &trans           &trans   &trans
-&trans       &kp INSERT    &kp PSCRN      &kp SE_PND     &trans         &trans          &trans     &kp PG_UP    &kp PG_DOWN       &kp UP_ARROW    &trans           &trans   &kp SE_QUES
-&trans       &kp K_REDO    &kp CAPS       &kp SE_EUR     &trans         &trans          &trans     &kp MINUS    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans   &kp SE_BSLS
-&trans       &kp K_UNDO    &kp K_CUT      &kp K_COPY     &kp K_CUT      &kp K_PASTE     &trans     &kp UNDER    &kp PLUS          &trans          &trans           &trans   &trans
+&trans       &kp INSERT    &kp PSCRN      &kp SE_PND     &trans         &trans          &trans     &kp MINUS    &trans            &kp UP_ARROW    &trans           &trans   &kp SE_QUES
+&trans       &kp K_REDO    &kp CAPS       &kp SE_EUR     &trans         &trans          &trans     &kp UNDER    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans   &kp SE_BSLS
+&trans       &kp K_UNDO    &kp K_CUT      &kp K_COPY     &kp K_CUT      &kp K_PASTE     &trans     &trans       &trans            &trans          &trans           &trans   &trans
 &trans       &trans        &trans         &trans         &trans         &trans          &trans     &trans       &trans            &trans          &trans           &trans
             >;
-            
+
    			display-name = "Raise";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
     };
 };
