@@ -150,7 +150,7 @@ layers:
   - {t: AltGr+3, s: AltGr+#}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mmv LS(LG(NUMBER_2))'
+  - {t: '$$mdi:transfer$$', type: trans}
   - PG UP
   - PG DOWN
   - $$mdi:arrow-up-bold$$
