@@ -57,15 +57,15 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - win-base
+  - lower
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:keyboard-space$$
-  - '2'
+  - Raise
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - RIGHT GUI
-  win-base:
+  lower:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F1
   - F2
@@ -130,14 +130,14 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '2':
+  Raise:
   - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
-  - '&mmv C_PLAY'
+  - PLAY
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -150,7 +150,7 @@ layers:
   - {t: AltGr+3, s: AltGr+#}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mmv C_PLAY'
+  - PLAY
   - PG UP
   - PG DOWN
   - $$mdi:arrow-up-bold$$
@@ -163,7 +163,7 @@ layers:
   - {t: AltGr+5, s: AltGr+%}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mmv C_PREVIOUS'
+  - PREVIOUS
   - {t: '-', s: _}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -176,7 +176,7 @@ layers:
   - COPY
   - CUT
   - PASTE
-  - '&mmv C_NEXT'
+  - $$mdi:skip-next$$
   - _
   - +
   - {t: '$$mdi:transfer$$', type: trans}
