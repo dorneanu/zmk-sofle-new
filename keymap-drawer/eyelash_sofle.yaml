@@ -150,7 +150,7 @@ layers:
   - {t: AltGr+3, s: AltGr+#}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mmv C_PLAY'
   - PG UP
   - PG DOWN
   - $$mdi:arrow-up-bold$$
