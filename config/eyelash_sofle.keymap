@@ -60,6 +60,15 @@
         retro-tap;
     };
 
+    esc_ctrl: escape_control {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -74,7 +83,7 @@
             bindings = <
 &kp ESCAPE       &kp SE_1      &kp SE_2      &kp SE_3        &kp SE_4      &kp SE_5       &kp UP_ARROW       &kp SE_6      &kp SE_7      &kp SE_8           &kp SE_9      &kp SE_0       &kp BACKSPACE
 &kp TAB          &kp Q         &kp W         &kp E           &kp R         &kp T          &kp DOWN_ARROW     &kp Y         &kp U         &kp I              &kp O         &kp P          &kp LBKT
-&kp LCTRL        &kp A         &kp S         &kp D           &kp F         &kp G          &kp LEFT_ARROW     &kp H         &kp J         &kp K              &kp L         &kp SEMICOLON  &kp SQT
+&esc_ctrl LCTRL ESC        &kp A         &kp S         &kp D           &kp F         &kp G          &kp LEFT_ARROW     &kp H         &kp J         &kp K              &kp L         &kp SEMICOLON  &kp SQT
 &kp LSHFT        &kp Z         &kp X         &kp C           &kp V         &kp B          &kp RIGHT_ARROW    &kp N         &kp M         &kp COMMA          &kp PERIOD    &kp FSLH       &kp RIGHT_SHIFT
 &kp C_MUTE       &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_GUI    &mo 1         &kp ENTER      &mkp LCLK    	     &kp SPACE     &mo 2         &kp RIGHT_CONTROL  &kp RIGHT_ALT &kp RIGHT_GUI
             >;
